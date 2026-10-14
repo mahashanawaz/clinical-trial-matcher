@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: trialmatch-backend
+Version: 0.1.0
+Requires-Python: >=3.11
+Requires-Dist: requests>=2.31
+Requires-Dist: pydantic>=2.6
+Requires-Dist: fastapi>=0.110
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: ruff>=0.4; extra == "dev"
+Requires-Dist: mypy>=1.9; extra == "dev"
+Requires-Dist: types-requests; extra == "dev"

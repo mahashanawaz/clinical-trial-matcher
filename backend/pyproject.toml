@@ -1,0 +1,25 @@
+[project]
+name = "trialmatch-backend"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "requests>=2.31",
+  "pydantic>=2.6",
+  "fastapi>=0.110",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.4", "mypy>=1.9", "types-requests"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
